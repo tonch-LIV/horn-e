@@ -1,14 +1,16 @@
 import HornedBeast from './components/HornedBeast.jsx'
 
-
-
-
-
-function Gallery() {
+function Gallery(props) {
   return (
     <>
-      <HornedBeast />
-      <HornedBeast />
+      {props.beasts.map((beast, index) => (
+        <HornedBeast
+          key={index}
+          title={beast.title}
+          imageUrl={beast.image_url}
+          description={beast.descripton}
+        />
+      ))}
     </>
   )
 }
