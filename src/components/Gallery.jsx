@@ -1,4 +1,4 @@
-import HornedBeast from './components/HornedBeast.jsx'
+import HornedBeast from './HornedBeast.jsx'
 
 function Gallery(props) {
   return (
