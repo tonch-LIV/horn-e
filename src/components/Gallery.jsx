@@ -1,19 +1,27 @@
 import HornedBeast from './HornedBeast.jsx';
 // import beastData from './data.json';
-// import Row from 'react-bootstrap/Row';
-// import Container from 'react-bootstrap/Container';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col'
+
+
 
 function Gallery(props) {
   return (
     <>
-      {props.beasts?.map((beast, index) => (
-        <HornedBeast
-          key={index}
-          title={beast.title}
-          imageUrl={beast.image_url}
-          description={beast.description}
-        />
-      ))}
+      <Container>
+        <Row>
+          {props.beasts?.map((beast, index) => (
+            <Col key={index} md={4}>
+              <HornedBeast
+                title={beast.title}
+                imageUrl={beast.image_url}
+                description={beast.description}
+              />
+            </Col>
+          ))}
+        </Row>
+      </Container>
     </>
   )
 }
