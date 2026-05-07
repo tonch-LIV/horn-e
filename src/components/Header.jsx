@@ -10,11 +10,11 @@ function Header() {
   };
 
   return (
-    <div onClick={(changeColor)}>
+    <div onClick={changeColor}>
       {colorSwitch ?
-        <h1 className="purpleHeader">Gallery of Horns!</h1>
+        <h1 className="purpleHeader">Gallery of Horns</h1>
         :
-        <h1 className="blueheader">Gallery of Horns!</h1>
+        <h1 className="blueHeader">Gallery of Horns!! (but cooler)</h1>
       }
     </div>
   );

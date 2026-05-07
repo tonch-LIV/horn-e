@@ -1,27 +1,32 @@
 import { useState } from "react";
 // import Col from "react-bootstrap";
-// import Card from "react-bootstrap";
+import Card from "react-bootstrap/Card";
 
 
 function HornedBeast(props) {
-  const [favorite, setFavorite] = useState(0)
+  const [favorite, setFavorite] = useState(0);
 
   return (
-    <>
-      <h2>{props.title}</h2>
-      <p>Favorite: {favorite}</p>
+    <Card style={{ width: '18rem', marginBottom: '1rem' }}>
 
-      <img
-        src={props.imageUrl}
-        alt={props.description}
-        title={props.title}
-        style={{ width: '20%'}}
-        onClick={() => setFavorite(favorite + 1)}
-      />
+      <Card.Body>
+        <Card.Title>{props.title}</Card.Title>
 
-      <p>{props.description}</p>
-    </>
-  )
+        <Card.Text>Favorites: {favorite}</Card.Text>
+
+        <Card.Img
+          variant="top"
+          src={props.imageUrl}
+          alt={props.description}
+          title={props.title}
+          onClick={() => setFavorite(favorite + 1)}
+        />
+
+        <Card.Text>{props.description}</Card.Text>
+      </Card.Body>
+
+    </Card>
+  );
 }
 
 export default HornedBeast

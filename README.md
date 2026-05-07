@@ -32,4 +32,5 @@ If you are developing a production application, we recommend using TypeScript wi
     - Images, titles, and descriptions now load.
     - added optional chaining to `props.beasts?.map()` in `Gallery.jsx` to protect from failed imports, re-render errors, etc.
     - created state in `HornedBeast.jsx`, added favoriting capability for each individual beast with counter.
-    - imported `Container`, `Row`, and `Col` from `bootstrap` to modify layout of content.
+    - imported `Container`, `Row`, and `Col` from `bootstrap` to modify layout of content in `Gallery.jsx`.
+    - imported `Card` from `bootstrap` to `HornedBeast.jsx`.
