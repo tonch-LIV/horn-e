@@ -11,7 +11,7 @@ function Gallery(props) {
           key={index}
           title={beast.title}
           imageUrl={beast.image_url}
-          description={beast.descripton}
+          description={beast.description}
         />
       ))}
     </>

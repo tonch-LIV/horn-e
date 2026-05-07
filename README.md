@@ -27,3 +27,7 @@ If you are developing a production application, we recommend using TypeScript wi
     - Feature01, failed... "error to resolve imports from bootstrap & data..."
       - installed bootstrap
       - missing data.json file...
+  - 05.07
+    - updated `data.json` with correct links.
+    - Images, titles, and descriptions now load.
+    - 

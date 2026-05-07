@@ -18,7 +18,7 @@ function App() {
   return (
     <>
       <Header />
-      <Gallery beasts={props} />,
+      <Gallery beasts={data} />
       <Footer />
     </>
   )
