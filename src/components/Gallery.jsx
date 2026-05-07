@@ -1,4 +1,7 @@
-import HornedBeast from './HornedBeast.jsx'
+import HornedBeast from './HornedBeast.jsx';
+// import beastData from './data.json';
+// import Row from 'react-bootstrap/Row';
+// import Container from 'react-bootstrap/Container';
 
 function Gallery(props) {
   return (
