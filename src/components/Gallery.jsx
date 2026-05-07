@@ -6,7 +6,7 @@ import HornedBeast from './HornedBeast.jsx';
 function Gallery(props) {
   return (
     <>
-      {props.beasts.map((beast, index) => (
+      {props.beasts?.map((beast, index) => (
         <HornedBeast
           key={index}
           title={beast.title}

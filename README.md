@@ -30,4 +30,6 @@ If you are developing a production application, we recommend using TypeScript wi
   - 05.07
     - updated `data.json` with correct links.
     - Images, titles, and descriptions now load.
-    - 
+    - added optional chaining to `props.beasts?.map()` in `Gallery.jsx` to protect from failed imports, re-render errors, etc.
+    - created state in `HornedBeast.jsx`, added favoriting capability for each individual beast with counter.
+    
