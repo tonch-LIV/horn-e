@@ -14,3 +14,25 @@ The React Compiler is not enabled on this template because of its impact on dev 
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## Changelog
+
+- Lab.01
+- Lab.02 
+  - 05.01
+    - created branch (lab02)
+    - stored `./data.json` import in `data` variable.
+    - uncommented `Gallery` within `App.jsx` and passed `{beasts}` as props.
+    - used `.map()` on `<HornedBeast />`.
+    - Feature01, failed... "error to resolve imports from bootstrap & data..."
+      - installed bootstrap
+      - missing data.json file...
+  - 05.07
+    - updated `data.json` with correct links.
+    - Images, titles, and descriptions now load.
+    - added optional chaining to `props.beasts?.map()` in `Gallery.jsx` to protect from failed imports, re-render errors, etc.
+    - created state in `HornedBeast.jsx`, added favoriting capability for each individual beast with counter.
+    - imported `Container`, `Row`, and `Col` from `bootstrap` to modify layout of content in `Gallery.jsx`.
+    - imported `Card` from `bootstrap` to `HornedBeast.jsx`.
+    - made gallery cards look more consistent when rendering.
+  
