@@ -35,4 +35,4 @@ If you are developing a production application, we recommend using TypeScript wi
     - imported `Container`, `Row`, and `Col` from `bootstrap` to modify layout of content in `Gallery.jsx`.
     - imported `Card` from `bootstrap` to `HornedBeast.jsx`.
     - made gallery cards look more consistent when rendering.
-  
+    - ![lighthouse report, 91](src/img/lab02_lighthouse.report.png)
