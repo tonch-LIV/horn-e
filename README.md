@@ -34,3 +34,5 @@ If you are developing a production application, we recommend using TypeScript wi
     - created state in `HornedBeast.jsx`, added favoriting capability for each individual beast with counter.
     - imported `Container`, `Row`, and `Col` from `bootstrap` to modify layout of content in `Gallery.jsx`.
     - imported `Card` from `bootstrap` to `HornedBeast.jsx`.
+    - made gallery cards look more consistent when rendering.
+  

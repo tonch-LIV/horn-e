@@ -9,8 +9,8 @@ import Col from 'react-bootstrap/Col'
 function Gallery(props) {
   return (
     <>
-      <Container>
-        <Row>
+      <Container className='mt-4'>  {/* margin top */}
+        <Row className='g-4'> {/*gutter spacing */}
           {props.beasts?.map((beast, index) => (
             <Col key={index} md={4}>
               <HornedBeast

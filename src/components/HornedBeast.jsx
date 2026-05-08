@@ -19,6 +19,11 @@ function HornedBeast(props) {
           src={props.imageUrl}
           alt={props.description}
           title={props.title}
+          style={{
+            width: '100%',
+            height: '300px',
+            objectFit: 'cover'
+          }}
           onClick={() => setFavorite(favorite + 1)}
         />
 
