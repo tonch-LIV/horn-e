@@ -36,3 +36,10 @@ If you are developing a production application, we recommend using TypeScript wi
     - imported `Card` from `bootstrap` to `HornedBeast.jsx`.
     - made gallery cards look more consistent when rendering.
     - ![lighthouse report, 91](src/img/lab02_lighthouse.report.png)
+- Lab.03
+  - 05.10
+    - created modal branch
+    - created state for beast selection and modal inside `App.jsx` component, `selectedBeast`, `showModal`.
+    - created handler function (`handleSelectedBeast()`) inside `App.jsx` component.
+    - passed `handleSelectBeast` into `<Gallery />` component inside `App.jsx`; `<Gallery />` passes `onSelect` to `<HornedBeast />`.
+    - 

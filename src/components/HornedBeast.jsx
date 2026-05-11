@@ -24,7 +24,10 @@ function HornedBeast(props) {
             height: '300px',
             objectFit: 'cover'
           }}
-          onClick={() => setFavorite(favorite + 1)}
+          onClick={() => {
+            setFavorite(favorite + 1)  // updates counter
+            props.onSelect();  //  props.onSelectBeast(beast) (from Gallery) -> handleSelectedBeast();
+          }}
         />
 
         <Card.Text>{props.description}</Card.Text>
