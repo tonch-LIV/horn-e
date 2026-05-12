@@ -1,4 +1,4 @@
-import { Modal } from "react-bootstrap/Modal";
+import Modal from "react-bootstrap/Modal";
 
 function SelectedBeast(props) {
 
@@ -19,7 +19,7 @@ function SelectedBeast(props) {
         <img 
           src={props.beast.image_url}
           alt={props.beast.description}
-          style={{ width: '100% '}}
+          style={{ width: '100%' }}
         />
         
         <p>{props.beast.description}</p>

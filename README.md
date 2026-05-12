@@ -49,3 +49,10 @@ If you are developing a production application, we recommend using TypeScript wi
         - added guard clause to prevent crashes in initial loadout.
       - added `show={props.show}` to connect to `showModal` from `App.jsx`.
       - `props.beast.(...)` displays relevant info.
+    - imported `SelectedBeast.jsx` into `App.jsx` (gives access to `<SelectedBeast />`).
+      - passed `selectedBeast` as `beast` and `showModal` as `show` into `<SelectedBeast />`.
+    - blank screen when running `npm run dev`...
+  - 05.12
+    - import of `Modal` syntax was wrong... no curly braces needed (`{}`)... console message `Uncaught SyntaxError: The requested module 'http://localhost:5173/node_modules/.vite/deps/react-bootstrap_Modal.js?v=642b567e' doesn't provide an export named: 'Modal'`.
+    - modal now appears when clicking an image; 
+
