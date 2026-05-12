@@ -8,20 +8,44 @@ import Header from './components/Header.jsx'
 import Gallery from './components/Gallery.jsx'
 import Footer from './components/Footer.jsx'
 
+import SelectedBeast from './components/SelectedBeast.jsx'
+
 import 'bootstrap/dist/css/bootstrap.min.css'
 import data from '../data.json'
 import './App.css'
 
 function App() {
-  // const [count, setCount] = useState(0)
+    // const [count, setCount] = useState(0)
+  const [selectedBeast, setSelectedBeast] = useState(null);  // null = no beast selected; null because argument will be an object, not string
+  const [showModal, setShowModal] = useState(false);  // default is no modal open
+
+  function handleSelectedBeast(beast) {
+    setSelectedBeast(beast) // remembers which beast
+    setShowModal(true)  // opens modal
+  };
+
+  function handleCloseModal() {
+    setShowModal(false);  // to close modal
+  };
 
   return (
     <>
       <Header />
-      <Gallery beasts={data} />
+
+      <Gallery
+        beasts = {data}
+        onSelectBeast = {handleSelectedBeast} />  {/* onSelectBeast =  prop; handleSelectedBeast = value; === props.onSelectBeast'; remove if confusing */}
+
+      <SelectedBeast
+        beast={selectedBeast}
+        show={showModal}
+        close={handleCloseModal}
+      />
+      
       <Footer />
     </>
-  )
-}
+  );
+
+};
 
 export default App

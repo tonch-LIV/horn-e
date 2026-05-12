@@ -36,3 +36,25 @@ If you are developing a production application, we recommend using TypeScript wi
     - imported `Card` from `bootstrap` to `HornedBeast.jsx`.
     - made gallery cards look more consistent when rendering.
     - ![lighthouse report, 91](src/img/lab02_lighthouse.report.png)
+- Lab.03
+  - 05.10
+    - created modal branch
+    - created state for beast selection and modal inside `App.jsx` component, `selectedBeast`, `showModal`.
+    - created handler function (`handleSelectedBeast()`) inside `App.jsx` component.
+    - passed `handleSelectBeast` into `<Gallery />` component inside `App.jsx`; `<Gallery />` passes `onSelect` to `<HornedBeast />`.
+  - 05.11
+    - created `SelectedBeast.jsx` in `src/components/` directory.
+      - imported bootstrap `Modal` component.
+      - created `SelectedBeast()` fucntion; will receive props from `App.jsx`.
+        - added guard clause to prevent crashes in initial loadout.
+      - added `show={props.show}` to connect to `showModal` from `App.jsx`.
+      - `props.beast.(...)` displays relevant info.
+    - imported `SelectedBeast.jsx` into `App.jsx` (gives access to `<SelectedBeast />`).
+      - passed `selectedBeast` as `beast` and `showModal` as `show` into `<SelectedBeast />`.
+    - blank screen when running `npm run dev`...
+  - 05.12
+    - import of `Modal` syntax was wrong... no curly braces needed (`{}`)... console message `Uncaught SyntaxError: The requested module 'http://localhost:5173/node_modules/.vite/deps/react-bootstrap_Modal.js?v=642b567e' doesn't provide an export named: 'Modal'`.
+    - modal now appears when clicking an image; 
+    - created `handleCloseModal` in `App.jsx`; passed it through `<SelectedBeast />`.
+      - in `SelectedBeast.jsx` received `onHide={props.close}` in `<Modal>`.
+

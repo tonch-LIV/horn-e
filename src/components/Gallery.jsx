@@ -17,6 +17,7 @@ function Gallery(props) {
                 title={beast.title}
                 imageUrl={beast.image_url}
                 description={beast.description}
+                onSelect={() => props.onSelectBeast(beast)}  // passes onSelect as prop, which inclused fucntion handleSelectedBeast(), run through arrow / anon function
               />
             </Col>
           ))}
@@ -24,6 +25,6 @@ function Gallery(props) {
       </Container>
     </>
   )
-}
+};
 
 export default Gallery
