@@ -42,4 +42,10 @@ If you are developing a production application, we recommend using TypeScript wi
     - created state for beast selection and modal inside `App.jsx` component, `selectedBeast`, `showModal`.
     - created handler function (`handleSelectedBeast()`) inside `App.jsx` component.
     - passed `handleSelectBeast` into `<Gallery />` component inside `App.jsx`; `<Gallery />` passes `onSelect` to `<HornedBeast />`.
-    - 
+  - 05.11
+    - created `SelectedBeast.jsx` in `src/components/` directory.
+      - imported bootstrap `Modal` component.
+      - created `SelectedBeast()` fucntion; will receive props from `App.jsx`.
+        - added guard clause to prevent crashes in initial loadout.
+      - added `show={props.show}` to connect to `showModal` from `App.jsx`.
+      - `props.beast.(...)` displays relevant info.
