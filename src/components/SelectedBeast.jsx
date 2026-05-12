@@ -7,7 +7,10 @@ function SelectedBeast(props) {
   }
 
   return (
-    <Modal show={props.show}>
+    <Modal
+      show={props.show}
+      onHide={props.close}
+    >
     
       <Modal.Header>
         <Modal.Title>

@@ -24,6 +24,10 @@ function App() {
     setShowModal(true)  // opens modal
   };
 
+  function handleCloseModal() {
+    setShowModal(false);  // to close modal
+  };
+
   return (
     <>
       <Header />
@@ -35,6 +39,7 @@ function App() {
       <SelectedBeast
         beast={selectedBeast}
         show={showModal}
+        close={handleCloseModal}
       />
       
       <Footer />

@@ -55,4 +55,6 @@ If you are developing a production application, we recommend using TypeScript wi
   - 05.12
     - import of `Modal` syntax was wrong... no curly braces needed (`{}`)... console message `Uncaught SyntaxError: The requested module 'http://localhost:5173/node_modules/.vite/deps/react-bootstrap_Modal.js?v=642b567e' doesn't provide an export named: 'Modal'`.
     - modal now appears when clicking an image; 
+    - created `handleCloseModal` in `App.jsx`; passed it through `<SelectedBeast />`.
+      - in `SelectedBeast.jsx` received `onHide={props.close}` in `<Modal>`.
 
