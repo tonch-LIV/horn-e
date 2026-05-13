@@ -57,4 +57,12 @@ If you are developing a production application, we recommend using TypeScript wi
     - modal now appears when clicking an image; 
     - created `handleCloseModal` in `App.jsx`; passed it through `<SelectedBeast />`.
       - in `SelectedBeast.jsx` received `onHide={props.close}` in `<Modal>`.
-
+- Lab.04
+  - 05.12
+    - created branch `filterForm`.
+    - created filter state `hornFilter, setHornFilter` in `App.jsx`.
+      - imported `Form` from `react-bootstrap`.
+      - defined `<Form>` and the dropdown menu options.
+      - created filtered data function `filteredBeasts()`.
+      - changed data being passed doing in `beast` props from `data` to `filteredBeasts`.
+    - ![lighthouse report, 80](src/img/lab04_lighthouse.png)
