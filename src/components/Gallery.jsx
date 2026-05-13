@@ -17,7 +17,7 @@ function Gallery(props) {
                 title={beast.title}
                 imageUrl={beast.image_url}
                 description={beast.description}
-                onSelect={() => props.onSelectBeast(beast)}  // passes onSelect as prop, which inclused fucntion handleSelectedBeast(), run through arrow / anon function
+                onSelect={() => props.onSelectBeast(beast)}  // passes onSelect as prop, which inclused fucntion handleSelectedBeast(), run through arrow function
               />
             </Col>
           ))}
